@@ -223,9 +223,9 @@ async def handle_user_join(chat_id, user_id, userbot):
         name = user.first_name or "Someone"
         mention = f'<a href="tg://user?id={user_id}"><b>{to_small_caps(name)}</b></a>'
         messages = [
-            f"🎤 {mention} <b>ᴊᴜsᴛ ᴊᴏɪɴᴇᴅ ᴛʜᴇ ᴠᴄ – ʟᴇᴛ's ᴍᴀᴋᴇ ɪᴛ ʟɪᴠᴇʟʏ! 🎶</b>",
-            f"✨ {mention} <b>ɪs ɴᴏᴡ ɪɴ ᴛʜᴇ ᴠᴄ – ᴡᴇʟᴄᴏᴍᴇ ᴀʙᴏᴀʀᴅ! 💫</b>",
-            f"🎵 {mention} <b>ʜᴀs ᴊᴏɪɴᴇᴅ – ʟᴇᴛ's ʀᴏᴄᴋ ᴛʜɪs ᴠɪʙᴇ! 🔥</b>",
+            f"🎤 {mention} <b>ᴊᴜsᴛ ᴊᴏɪɴᴇᴅ ᴛʜᴇ ᴠᴄ 🎶</b>",
+            f"✨ {mention} <b>ɪs ɴᴏᴡ ɪɴ ᴛʜᴇ ᴠᴄ 💫</b>",
+            f"🎵 {mention} <b>ʜᴀs ᴊᴏɪɴᴇᴅ 🔥</b>",
         ]
         msg = random.choice(messages)
         sent_msg = await app.send_message(chat_id, msg)
@@ -239,9 +239,9 @@ async def handle_user_leave(chat_id, user_id, userbot):
         name = user.first_name or "Someone"
         mention = f'<a href="tg://user?id={user_id}"><b>{to_small_caps(name)}</b></a>'
         messages = [
-            f"👋 {mention} <b>ʟᴇғᴛ ᴛʜᴇ ᴠᴄ – ʜᴏᴘᴇ ᴛᴏ sᴇᴇ ʏᴏᴜ ʙᴀᴄᴋ sᴏᴏɴ! 🌟</b>",
-            f"🚪 {mention} <b>sᴛᴇᴘᴘᴇᴅ ᴏᴜᴛ – ᴅᴏɴ'ᴛ ᴛᴀᴋᴇ ᴛᴏᴏ ʟᴏɴɢ, ᴡᴇ'ʟʟ ᴍɪss ʏᴏᴜ! 💖</b>",
-            f"✌️ {mention} <b>sᴀɪᴅ ɢᴏᴏᴅʙʏᴇ – ᴄᴏᴍᴇ ʙᴀᴄᴋ ᴀɴᴅ ᴊᴏɪɴ ᴛʜᴇ ғᴜɴ ᴀɢᴀɪɴ! 🎶</b>",
+            f"👋 {mention} <b>ʟᴇғᴛ ᴛʜᴇ ᴠᴄ 🌟</b>",
+            f"🚪 {mention} <b>ʙʏ sᴛᴇᴘᴘᴇᴅ ᴏᴜᴛ 💖</b>",
+            f"✌️ {mention} <b>ʙʏ sᴀɪᴅ ɢᴏᴏᴅʙʏᴇ 🎶</b>",
         ]
         msg = random.choice(messages)
         sent_msg = await app.send_message(chat_id, msg)
