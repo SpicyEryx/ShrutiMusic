@@ -86,8 +86,8 @@ async def fork_repo_callback(client, query):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("🤍 Oᴡɴᴇʀ 🌷", url="https://t.me/SpicyEryx"),
-                    InlineKeyboardButton("🔥 Aᴀʜ Bᴀʙʏ ⚡", url="https://t.me/HEART_STR1NGS")
+                    InlineKeyboardButton("🤍 Oᴡɳᴇʀ 🌷", url="https://t.me/SpicyEryx"),
+                    InlineKeyboardButton("🔥 Iɳʂƚα ⚡", url="https://www.instagram.com/eryxbbyy?igsh=MXh1NzJwOXJreHI5cA==")
                 ],
                 [
                     InlineKeyboardButton("🌾 Bᴀᴄᴋ 🌼", callback_data="settingsback_helper")
