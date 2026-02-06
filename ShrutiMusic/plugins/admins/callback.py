@@ -79,8 +79,8 @@ async def show_help_page1(client, callback_query: CallbackQuery):
 async def fork_repo_callback(client, query):
     await query.message.edit_text(
         text=(
-            "🌷 <b>Hᴍ Bʜᴀɪ Q Cʟɪᴄᴋ Kᴀʀᴀ ✨</b>\n\n"
-            "😆 Cʜᴀʟᴀ Jᴀ Bʜᴀɪ Yᴀᴀʀ Aᴀʏᴀ Bᴀᴅᴀ 👣"
+            "🌷 <b>Wᴇʟᴄᴏᴍᴇ Tᴏ Eʀʏx I'ᴅ Hᴜʙ ✨</b>\n\n"
+            "🩷 Cʜᴀʟᴏ Aʙ Tʜᴏᴅᴀ Sᴜᴘᴘᴏʀᴛ Bʜɪ Bɪᴋʜᴀ Dᴏ 🌸"
         ),
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
