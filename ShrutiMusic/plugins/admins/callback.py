@@ -80,7 +80,7 @@ async def fork_repo_callback(client, query):
     await query.message.edit_text(
         text=(
             "🌷 <b>Wᴇʟᴄᴏᴍᴇ Tᴏ Eʀʏx I'ᴅ Hᴜʙ ✨</b>\n\n"
-            "🩷 Cʜᴀʟᴏ Aʙ Tʜᴏᴅᴀ Sᴜᴘᴘᴏʀᴛ Bʜɪ Bɪᴋʜᴀ Dᴏ 🌸"
+            "🩷 Aʙ Tʜᴏᴅᴀ Sᴜᴘᴘᴏʀᴛ Bʜɪ Dɪᴋʜᴀ Dᴏ 🌸"
         ),
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
