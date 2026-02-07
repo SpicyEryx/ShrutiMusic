@@ -305,9 +305,9 @@ HELP_21 = """
 # 🎯 TEXT TO SPEECH COMMANDS
 HELP_22 = """ 🔊 <b>TEXT TO SPEECH</b> 🎤
 
-• /tts &lt;text&gt;: Converts the given text to speech in Hindi 🇮🇳
+• /eryx &lt;text&gt;: Converts the given text to speech in Hindi 🇮🇳
 <b>Example:</b>
-• /tts Radhe Radhe 🙏
+• /eryx Radhe Radhe 🙏
 
 <b>Note:</b> Make sure to provide some text after the /tts command ✨ """
 
