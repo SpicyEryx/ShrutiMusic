@@ -29,7 +29,6 @@ def start_panel(_):
             InlineKeyboardButton(
                 text=_["S_B_1"], url=f"https://t.me/{app.username}?startgroup=true"
             ),
-            InlineKeyboardButton(text=_["S_B_2"], url=config.SUPPORT_GROUP),
         ],
         [
             InlineKeyboardButton(text=_["S_B_11"], callback_data="about_page")  # About button
