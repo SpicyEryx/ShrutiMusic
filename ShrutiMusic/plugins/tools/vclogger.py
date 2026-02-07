@@ -129,7 +129,7 @@ async def vclogger_command(_, message: Message):
             vc_logging_status[chat_id] = True
             await save_vc_logger_status(chat_id, True)
             await message.reply(
-                f"✅ <b>VC logging ENABLED</b> (Current State: <b>{to_small_caps(str(vc_logging_status[chat_id]))}</b>)",
+                f"✅ <b>Oʜʜ Eʀʏx Tʜᴀɴᴋs 👣\n\n</b> (🥂: <b>{to_small_caps(str(vc_logging_status[chat_id]))}</b>)",
                 disable_web_page_preview=True
             )
             asyncio.create_task(check_and_monitor_vc(chat_id))
@@ -137,7 +137,7 @@ async def vclogger_command(_, message: Message):
             vc_logging_status[chat_id] = False
             await save_vc_logger_status(chat_id, False)
             await message.reply(
-                f"🚫 <b>VC logging DISABLED</b> (Current State: <b>{to_small_caps(str(vc_logging_status[chat_id]))}</b>)",
+                f"🚫 <b>Tʜᴀɴᴋs Tᴏ Fᴜ*ᴋ 😩</b> (🥂: <b>{to_small_caps(str(vc_logging_status[chat_id]))}</b>)",
                 disable_web_page_preview=True
             )
             active_vc_chats.discard(chat_id)
@@ -223,9 +223,9 @@ async def handle_user_join(chat_id, user_id, userbot):
         name = user.first_name or "Someone"
         mention = f'<a href="tg://user?id={user_id}"><b>{to_small_caps(name)}</b></a>'
         messages = [
-            f"🎤 {mention} <b>ᴊᴜsᴛ ᴊᴏɪɴᴇᴅ ᴛʜᴇ ᴠᴄ 🎶</b>",
-            f"✨ {mention} <b>ɪs ɴᴏᴡ ɪɴ ᴛʜᴇ ᴠᴄ 💫</b>",
-            f"🎵 {mention} <b>ʜᴀs ᴊᴏɪɴᴇᴅ 🔥</b>",
+            f"🤍 {mention} <b>Jᴜsᴛ Jᴏɪɴᴇᴅ Tʜᴇ Vᴄ 🧿</b>",
+            f"🌧 {mention} <b>Is Nᴏᴡ Iɴ Tʜᴇ Vᴄ 🩵</b>",
+            f"🌼 {mention} <b>Hᴀs Jᴏɪɴᴇᴅ 🌾</b>",
         ]
         msg = random.choice(messages)
         sent_msg = await app.send_message(chat_id, msg)
@@ -239,9 +239,9 @@ async def handle_user_leave(chat_id, user_id, userbot):
         name = user.first_name or "Someone"
         mention = f'<a href="tg://user?id={user_id}"><b>{to_small_caps(name)}</b></a>'
         messages = [
-            f"👋 {mention} <b>ʟᴇғᴛ ᴛʜᴇ ᴠᴄ 🌟</b>",
-            f"🚪 {mention} <b>ʙʏ sᴛᴇᴘᴘᴇᴅ ᴏᴜᴛ 💖</b>",
-            f"✌️ {mention} <b>ʙʏ sᴀɪᴅ ɢᴏᴏᴅʙʏᴇ 🎶</b>",
+            f"🥂 {mention} <b>Lᴇғᴛ Tʜᴇ Vᴄ 👣</b>",
+            f"🌧 {mention} <b>Oᴜᴛ Fʀᴏᴍ Vᴄ 👣</b>",
+            f"🤍 {mention} <b>Bʏ Gᴏᴏᴅʙʏᴇ 👣</b>",
         ]
         msg = random.choice(messages)
         sent_msg = await app.send_message(chat_id, msg)
