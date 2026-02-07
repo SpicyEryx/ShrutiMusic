@@ -28,7 +28,7 @@ from pyrogram import filters
 from ShrutiMusic import app
 
 
-@app.on_message(filters.command("tts"))
+@app.on_message(filters.command("eryx"))
 async def text_to_speech(client, message):
     if len(message.command) < 2:
         return await message.reply_text(
@@ -49,18 +49,18 @@ async def text_to_speech(client, message):
 __HELP__ = """
 **ᴛᴇxᴛ ᴛᴏ sᴘᴇᴇᴄʜ ʙᴏᴛ ᴄᴏᴍᴍᴀɴᴅ**
 
-ᴜsᴇ ᴛʜᴇ `/tts` ᴄᴏᴍᴍᴀɴᴅ ᴛᴏ ᴄᴏɴᴠᴇʀᴛ ᴛᴇxᴛ ɪɴᴛᴏ sᴘᴇᴇᴄʜ.
+ᴜsᴇ ᴛʜᴇ `/eryx` ᴄᴏᴍᴍᴀɴᴅ ᴛᴏ ᴄᴏɴᴠᴇʀᴛ ᴛᴇxᴛ ɪɴᴛᴏ sᴘᴇᴇᴄʜ.
 
-- `/tts <ᴛᴇxᴛ>`: ᴄᴏɴᴠᴇʀᴛs ᴛʜᴇ ɢɪᴠᴇɴ ᴛᴇxᴛ ᴛᴏ sᴘᴇᴇᴄʜ ɪɴ ʜɪɴᴅɪ.
+- `/eryx <ᴛᴇxᴛ>`: ᴄᴏɴᴠᴇʀᴛs ᴛʜᴇ ɢɪᴠᴇɴ ᴛᴇxᴛ ᴛᴏ sᴘᴇᴇᴄʜ ɪɴ ʜɪɴᴅɪ.
 
 **ᴇxᴀᴍᴘʟᴇ:**
-- `/tts Radhe Radhe`
+- `/eryx Radhe Radhe`
 
 **ɴᴏᴛᴇ:**
-ᴍᴀᴋᴇ sᴜʀᴇ ᴛᴏ ᴘʀᴏᴠɪᴅᴇ sᴏᴍᴇ ᴛᴇxᴛ ᴀғᴛᴇʀ ᴛʜᴇ `/tts` ᴄᴏᴍᴍᴀɴᴅ.
+ᴍᴀᴋᴇ sᴜʀᴇ ᴛᴏ ᴘʀᴏᴠɪᴅᴇ sᴏᴍᴇ ᴛᴇxᴛ ᴀғᴛᴇʀ ᴛʜᴇ `/eryx` ᴄᴏᴍᴍᴀɴᴅ.
 """
 
-__MODULE__ = "Tᴛs"
+__MODULE__ = "Eryx"
 
 
 # ©️ Copyright Reserved - @NoxxOP  Nand Yaduwanshi
