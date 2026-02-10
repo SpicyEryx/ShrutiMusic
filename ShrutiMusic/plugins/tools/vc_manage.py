@@ -25,7 +25,7 @@ def command(commands: Union[str, List[str]]):
 async def on_vc_start(_, msg):
     chat_id = msg.chat.id
     try:
-        await msg.reply("<b>🤤 ᴀᴀʜ ᴠᴄ sᴛᴀʀᴛᴇᴅ ʙᴀʙʏ 💋</b>")
+        await msg.reply("<b>💗 𝗩𝗼𝗶𝗰𝗲 𝗖𝗵𝗮𝘁 𝗦𝘁𝗮𝗿𝘁𝗲𝗱 🪽</b>")
         # Remove st_stream call from here - it's causing the error
         await set_loop(chat_id, 0)
     except Exception as e:
@@ -42,7 +42,7 @@ async def get_group_call(client: Client, message: Message, err_msg: str = "") ->
             full_chat = (await assistant.invoke(GetFullChat(chat_id=chat_peer.chat_id))).full_chat
         if full_chat is not None:
             return full_chat.call
-    await message.reply(f"<b>No voice chat ғᴏᴜɴᴅ ʙᴀʙʏ 😂</b> {err_msg}")
+    await message.reply(f"<b>𝗡𝗼 𝗩𝗼𝗶𝗰𝗲 𝗖𝗵𝗮𝘁 𝗙𝗼𝘂𝗻𝗱 😂</b> {err_msg}")
     return False
 
 
@@ -72,7 +72,7 @@ async def start_group_call(c: Client, m: Message):
                 random_id=assistant.rnd_id() // 9000000000,
             )
         )
-        await msg.edit_text("<b>🥵 ᴀᴀʜ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ sᴛᴀʀᴛᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ ⚡️</b>")
+        await msg.edit_text("<b>💛 𝗩𝗼𝗶𝗰𝗲 𝗖𝗵𝗮𝘁 𝗦𝘁𝗮𝗿𝘁𝗲𝗱 🐣</b>")
         await set_loop(chat_id, 0)
 
     except ChatAdminRequired:
@@ -118,7 +118,7 @@ async def start_group_call(c: Client, m: Message):
                 ),
             )
 
-            await msg.edit_text("<b>>🥵 ᴀᴀʜ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ sᴛᴀʀᴛᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ ⚡️</b>")
+            await msg.edit_text("<b>>🤍 𝗩𝗼𝗶𝗰𝗲 𝗖𝗵𝗮𝘁 𝗦𝘁𝗮𝗿𝘁𝗲𝗱 🪄</b>")
             await set_loop(chat_id, 0)
             
         except Exception as e:
@@ -147,7 +147,7 @@ async def stop_group_call(c: Client, m: Message):
             return
             
         await assistant.invoke(DiscardGroupCall(call=group_call))
-        await msg.edit_text("<b>❤️‍🩹 ᴏʜʜ ɴᴏ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ ᴄʟᴏsᴇᴅ 🤌</b>")
+        await msg.edit_text("<b>❤️‍🩹 𝗩𝗼𝗶𝗰𝗲 𝗖𝗵𝗮𝘁 𝗘𝗻𝗱𝗲𝗱 🥹</b>")
         await set_loop(chat_id, 0)
 
     except Exception as e:
@@ -190,7 +190,7 @@ async def stop_group_call(c: Client, m: Message):
                     ),
                 )
                 
-                await msg.edit_text("<b>❤️‍🩹 ᴏʜʜ ɴᴏ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ ᴄʟᴏsᴇᴅ 🤌</b>")
+                await msg.edit_text("<b>❤️‍🩹 𝗩𝗼𝗶𝗰𝗲 𝗖𝗵𝗮𝘁 𝗘𝗻𝗱𝗲𝗱 🥹</b>")
                 await set_loop(chat_id, 0)
                 
             except Exception as ex:
