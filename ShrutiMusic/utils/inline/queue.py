@@ -40,8 +40,9 @@ def queue_markup(
                 callback_data=f"GetQueued {CPLAY}|{videoid}",
             ),
             InlineKeyboardButton(
-                text=_["CLOSE_BUTTON"],
-                callback_data="close",
+                text=_["S_B_1"],
+                callback_data="f"https://t.me/{app.username}?startgroup=true",
+            
             ),
         ]
     ]
@@ -58,8 +59,8 @@ def queue_markup(
                 callback_data=f"GetQueued {CPLAY}|{videoid}",
             ),
             InlineKeyboardButton(
-                text=_["CLOSE_BUTTON"],
-                callback_data="close",
+                text=_["S_B_1"],
+                callback_data="f"https://t.me/{app.username}?startgroup=true",
             ),
         ],
     ]
@@ -76,8 +77,8 @@ def queue_back_markup(_, CPLAY):
                     callback_data=f"queue_back_timer {CPLAY}",
                 ),
                 InlineKeyboardButton(
-                    text=_["CLOSE_BUTTON"],
-                    callback_data="close",
+                text=_["S_B_1"],
+                callback_data="f"https://t.me/{app.username}?startgroup=true",
                 ),
             ]
         ]
@@ -89,8 +90,8 @@ def aq_markup(_, chat_id):
     buttons = [
         [
             InlineKeyboardButton(
-                    text=_["CLOSE_BUTTON"],
-                    callback_data="close",
+                text=_["S_B_1"],
+                callback_data="f"https://t.me/{app.username}?startgroup=true",
             ),
         ],
     ]
