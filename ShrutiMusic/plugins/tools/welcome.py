@@ -38,7 +38,14 @@ def circle(pfp, size=(450, 450)):
     return pfp
 
 def welcomepic(pic, user, chat, id, uname):
-    background = Image.open("ShrutiMusic/assets/welcome.jpg")
+    background = Image.open("ShrutiMusic/assets/welcome.png")
+    pfp = Image.open(pic).convert("RGBA")
+    pfp = circle(pfp)
+    pfp = pfp.resize((450, 450)) 
+    draw = ImageDraw.Draw(background)
+    pfp_position = (767, 133)  
+    background.paste(pfp, pfp_position, pfp)
+    background.save(f"downloads/welcome#{id}.png")
     return f"downloads/welcome#{id}.png"
 
 @app.on_message(filters.command("welcome") & ~filters.private)
