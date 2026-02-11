@@ -121,12 +121,12 @@ async def greet_group(_, member: ChatMemberUpdated):
             photo=welcomeimg,
             caption=f"""<b>❅──✦Ꮗ 𝒆 𝒍 𝑪 𝒐 𝑴 𝒆✦──❅</b>
 
-➻ <b>Nᴀᴍᴇ»</n> {user.mention}!
+\n<blockquote>➻ <b>Nᴀᴍᴇ»</n> {user.mention}!
 ➻ <b>Gʀᴏᴜᴘ»</b> {member.chat.title}
 ➻ <b>Yᴏᴜʀ ɪᴅ»</b> <code>{user.id}</code>
-➻ <b>Usᴇʀɴᴀᴍᴇ»</b> @{user.username if user.username else "ɴᴏᴛ sᴇᴛ"}
+➻ <b>Usᴇʀɴᴀᴍᴇ»</b> @{user.username if user.username else "ɴᴏᴛ sᴇᴛ"}</blockquote>\n<blockquote><b>❖  𝐌ᴧᴅє  𝐁ɣ ➛  <a href=\"https://t.me/HEART_STR1NGS/114\">𓍼 ໋໋໋໋݊݊݊݊ 𝑬𝒓𝒚𝒙 𓆪ꪾ𓂃ᤢᤢㅤ</a></b></blockquote>
 
-<b>▰▰▰▰▰▰▰▰▰▰▰▰▰\n➻ ᴛʜᴀɴᴋs ғᴏʀ ᴊᴏɪɴɪɴɢ ᴜs ⚡️~!\n❅─────✧❅✦❅✧─────❅</b>""",
+\n\n<b>▰▰▰▰▰▰▰▰▰▰▰▰▰\n\n➻ ᴛʜᴀɴᴋs ғᴏʀ ᴊᴏɪɴɪɴɢ ᴜs ⚡️~!\n\n❅─────✧❅✦❅✧─────❅</b>""",
             reply_markup=InlineKeyboardMarkup([
                 [InlineKeyboardButton("🎵 ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ 🎵", url=f"https://t.me/{app.username}?startgroup=True")]
             ]),
