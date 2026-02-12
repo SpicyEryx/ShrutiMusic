@@ -121,10 +121,10 @@ async def greet_group(_, member: ChatMemberUpdated):
             photo=welcomeimg,
             caption=f"""<b>❅──✦ Ꮗ 𝒆 𝒍 𝑪 𝒐 𝑴 𝒆 ✦──❅</b>
 
-\n❅─────✧❅✦❅✧─────❅\n<blockquote>➻ <b>Gʀᴏᴜᴘ»</b> {member.chat.title}</blockquote>
-<blockquote><a href=\"https://t.me/ERYX_MUSIC_BOT?start=start\">𓍼 ໋໋໋໋݊݊݊݊ 𝑵𝒆𝒘 𝑼𝒔𝒆𝒓 𝑰𝒏𝒇𝒐 𓆪ꪾ𓂃ᤢᤢㅤ</a>\n\n➻ <b>Nᴀᴍᴇ»</n> {user.mention}!
+<blockquote>➻ <b>Gʀᴏᴜᴘ»</b> {member.chat.title}</blockquote>\n\n❅─────✧❅✦❅✧─────❅
+<blockquote><a href=\"https://t.me/ERYX_MUSIC_BOT?start=start\">𝐔𝐒𝐄𝐑 𝐈𝐍𝐅𝐎𝐑𝐌𝐀𝐓𝐈𝐎𝐍ㅤ</a>\n\n➻ <b>Nᴀᴍᴇ»</n> {user.mention}!
 ➻ <b>Yᴏᴜʀ ɪᴅ»</b> <code>{user.id}</code>
-➻ <b>Usᴇʀɴᴀᴍᴇ»</b> @{user.username if user.username else "ɴᴏᴛ sᴇᴛ"}</blockquote>\n<blockquote><b>❖  𝐌ᴧᴅє  𝐁ɣ ➛  <a href=\"https://t.me/HEART_STR1NGS/114\">𓍼 ໋໋໋໋݊݊݊݊ 𝑬𝒓𝒚𝒙 𓆪ꪾ𓂃ᤢᤢㅤ</a></b></blockquote>\n❅─────✧❅✦❅✧─────❅
+➻ <b>Usᴇʀɴᴀᴍᴇ»</b> @{user.username if user.username else "ɴᴏᴛ sᴇᴛ"}</blockquote>\n❅─────✧❅✦❅✧─────❅\n<blockquote><b>❖  𝐌ᴧᴅє  𝐁ɣ ➛  <a href=\"https://t.me/HEART_STR1NGS/114\">𓍼 ໋໋໋໋݊݊݊݊ 𝑬𝒓𝒚𝒙 𓆪ꪾ𓂃ᤢᤢㅤ</a></b></blockquote>
 
 \n<b>❅─────✧❅✦❅✧─────❅\n<blockquote>➻ Tʜᴀɴᴋs Fᴏʀ Jᴏɪɴɪɴɢ Us 🤍🌿</blockquote>\n❅─────✧❅✦❅✧─────❅</b>""",
             reply_markup=InlineKeyboardMarkup([
