@@ -243,7 +243,6 @@ HELP_17 = """
 HELP_18 = """
 <b><u>ᴀᴅᴍɪɴ ᴄᴏᴍᴍᴀɴᴅs</b></u>
 /ban - Ban A User
-/banall - Ban All Users
 /sban - Delete all messages of user that sended in group and ban the user
 /tban - Ban A User For Specific Time
 /unban - Unban A User
@@ -265,7 +264,6 @@ HELP_18 = """
 /mute - Mute A User
 /tmute - Mute A User For Specific Time
 /unmute - Unmute A User
-/zombies - Ban Deleted Accounts
 /report | @admins | @admin - Report A Message To Admins.
 
 
