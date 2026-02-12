@@ -223,7 +223,7 @@ async def handle_user_join(chat_id, user_id, userbot):
         name = user.first_name or "Someone"
         mention = f'<a href="tg://user?id={user_id}"><b>{to_small_caps(name)}</b></a>'
         messages = [
-            f"🤍 {mention} <b>Jᴏɪɴᴇᴅ Tʜᴇ Vᴄ 🧿</b>",
+            f"#JᴏɪɴVɪᴅᴇᴏCʜᴀᴛ\n<b>Nαмє ➛</b> {mention} \n<b>Iᴅ ➛</b> ideals \n<b>Aᴄтɪση ➛</b> Igησяє∂",
             f"🩷 {mention} <b>Jᴏɪɴᴇᴅ Vᴄ 🌷</b>",
             f"🌼 {mention} <b>Hᴀs Jᴏɪɴᴇᴅ 🌾</b>",
         ]
