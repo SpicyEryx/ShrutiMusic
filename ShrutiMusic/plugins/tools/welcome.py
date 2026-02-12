@@ -68,15 +68,15 @@ async def auto_state(_, message):
 
         if state == "on":
             if A and not A.get("disabled", False):
-                return await message.reply_text("✦ Special Welcome Already Enabled")
+                return await message.reply_text("🤍 Welcome Already Enabled 🌿")
             await wlcm.update_one({"chat_id": chat_id}, {"$set": {"disabled": False}}, upsert=True)
-            await message.reply_text(f"✦ Enabled Special Welcome in {message.chat.title}")
+            await message.reply_text(f"🤍 Enabled Welcome in {message.chat.title} 🌿")
 
         elif state == "off":
             if A and A.get("disabled", False):
-                return await message.reply_text("✦ Special Welcome Already Disabled")
+                return await message.reply_text("🫠 Special Already Disabled 🫶")
             await wlcm.update_one({"chat_id": chat_id}, {"$set": {"disabled": True}}, upsert=True)
-            await message.reply_text(f"✦ Disabled Special Welcome in {message.chat.title}")
+            await message.reply_text(f"🫠 Disabled Welcome in {message.chat.title} 🫶")
 
         else:
             await message.reply_text(usage)
@@ -119,10 +119,10 @@ async def greet_group(_, member: ChatMemberUpdated):
         temp.MELCOW[f"welcome-{member.chat.id}"] = await app.send_photo(
             member.chat.id,
             photo=welcomeimg,
-            caption=f"""<b>❅──✦Ꮗ 𝒆 𝒍 𝑪 𝒐 𝑴 𝒆✦──❅</b>
+            caption=f"""<b>❅──✦ Ꮗ 𝒆 𝒍 𝑪 𝒐 𝑴 𝒆 ✦──❅</b>
 
-<blockquote>➻ <b>Nᴀᴍᴇ»</n> {user.mention}!
-➻ <b>Gʀᴏᴜᴘ»</b> {member.chat.title}
+❅─────✧❅✦❅✧─────❅\n<blockquote>➻ <b>Gʀᴏᴜᴘ»</b> {member.chat.title}</blockquote>
+<blockquote><a href=\"https://t.me/ERYX_MUSIC_BOT?start=start\">𓍼 ໋໋໋໋݊݊݊݊ 𝑵𝒆𝒘 𝑼𝒔𝒆𝒓 𝑰𝒏𝒇𝒐 𓆪ꪾ𓂃ᤢᤢㅤ</a>\n\n➻ <b>Nᴀᴍᴇ»</n> {user.mention}!
 ➻ <b>Yᴏᴜʀ ɪᴅ»</b> <code>{user.id}</code>
 ➻ <b>Usᴇʀɴᴀᴍᴇ»</b> @{user.username if user.username else "ɴᴏᴛ sᴇᴛ"}</blockquote>\n<blockquote><b>❖  𝐌ᴧᴅє  𝐁ɣ ➛  <a href=\"https://t.me/HEART_STR1NGS/114\">𓍼 ໋໋໋໋݊݊݊݊ 𝑬𝒓𝒚𝒙 𓆪ꪾ𓂃ᤢᤢㅤ</a></b></blockquote>
 
