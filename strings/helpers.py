@@ -309,7 +309,7 @@ HELP_22 = """ 🔊 <b>TEXT TO SPEECH</b> 🎤
 <b>Example:</b>
 • /eryx Radhe Radhe 🙏
 
-<b>Note:</b> Make sure to provide some text after the /tts command ✨ """
+<b>Note:</b> Make sure to provide some text after the /eryx command ✨ """
 
 # 🔗 INVITE LINK COMMANDS  
 HELP_23 = """ 🔗 <b>INVITE LINK COMMANDS</b> 💫
